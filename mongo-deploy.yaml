@@ -20,4 +20,11 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 27017
+      volumeMounts:
+        - name: data
+          mountPath: /data/db
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: mongo-pvc
         
