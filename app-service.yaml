@@ -1,6 +1,8 @@
 kind: Service
 apiVersion: v1
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
   name:  backend
   labels:
     app: backend
