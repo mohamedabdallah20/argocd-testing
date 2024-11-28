@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "-10" 
+    argocd.argoproj.io/sync-wave: "-5" 
   name: mongodb
   labels:
     app: mongodb
