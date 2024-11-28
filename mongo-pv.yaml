@@ -5,6 +5,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "-1"
   name: mongo-pv
 spec:
+  claimRef:
+    namespace: appcd
+    name: mongo-pvc
   capacity:
     storage: 10Gi
   accessModes:
